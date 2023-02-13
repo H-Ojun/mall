@@ -49,7 +49,6 @@ public class MypageViewHandler {
                 for(Mypage mypage : mypageList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
                     mypage.setStatus(deliveryStarted.getStatus());
-                    mypage.set();
                 // view 레파지 토리에 save
                 mypageRepository.save(mypage);
                 }
