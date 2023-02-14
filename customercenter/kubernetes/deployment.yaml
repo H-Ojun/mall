@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
         - name: customercenter
-          image: username/customercenter:latest
+          image: wgw247/customercenter:v230214
           ports:
             - containerPort: 8080
           readinessProbe:
             httpGet:
               path: '/actuator/health'
               port: 8080
-            initialDelaySeconds: 10
+            initialDelaySeconds: 30
             timeoutSeconds: 2
             periodSeconds: 5
             failureThreshold: 10
