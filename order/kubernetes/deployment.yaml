@@ -19,6 +19,9 @@ spec:
           image: wgw247/order:v230214
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: "200m"
           readinessProbe:
             httpGet:
               path: '/actuator/health'
